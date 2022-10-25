@@ -18,6 +18,8 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 const numberToString = num => String(num);
+console.log(numberToString(20))
+console.log(20)
 let num = 15;
 let text = num.toString();
 
@@ -40,6 +42,15 @@ const saveSecondNumber = (num) => {
   // * NaN
   // * String
   const typeOf = data => Array.isArray(data) ? 'array' : typeof data;
+  const typeOutput = (data) => {
+    console.log ('data type is', typeof data)
+  }
+
+
+  typeOutput (53);
+  typeOutput ('hello');
+  typeOutput (true);
+  typeOutput (undefined);
 
 
 // Write a JavaScript program that adds 2 numbers together.
@@ -65,15 +76,24 @@ const equals = () => {
 }
 
 // Write a JavaScript program that runs only when 2 things are true.
-const bothTrue = (a, b) => a && b;
+const bothTrue = (a, b) => {
+  if (a && b){
+    console.log('a & b are both true')
+  }};
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-const oneTrue = (a, b) => a || b;
+const oneTrue = (a, b) => {
+  if (a || b){
+    console.log ('a || b when 1 of 2 things are true')
+  }};
 
 
 // Write a JavaScript program that runs when both things are not true.  
-const bothNotTrue = (a, b) => !a && !b;
+const bothNotTrue = (a, b) => {
+  if (!a && !b){
+    console.log ('!a && !b when both are not true')
+  }};
 
 
 // ***************************
@@ -87,15 +107,6 @@ const bothNotTrue = (a, b) => !a && !b;
 // 5. Or go use the `npm start` command and navigate to localhost:8080 (ctrl + C to close)
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
-
-// const addForm = document.getElementById('add');
-// addForm.addEventListener("submit", e => {
-//   e.preventDefault()
-//   const n1 = document.getElementById("number1").value;
-//   const n2 = document.getElementById("number2").value;
-//   const sum = add(stringToNumber(n1), stringToNumber(n2));
-//   document.getElementById("sum").innerHTML = `The sum of ${n1} + ${n2} is ${sum}`;
-// });
 
 
 
